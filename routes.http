@@ -1,0 +1,33 @@
+POST http://localhost:3333/sandalia
+Content-Type: application/json
+
+{
+    "tamanho": "37",
+    "marca": "moleca",
+    "cor": "branca",
+    "solado": "borracha"
+}
+
+###
+
+GET http://localhost:3333/sandalia
+
+###
+
+GET http://localhost:3333/sandalia?search=vans
+
+###
+
+PUT http://localhost:3333/sandalia/4bb845ac-706b-4ab4-af5d-a6a016d23837
+Content-Type: application/json
+
+{ 
+    "tamanho": "39",
+    "marca": "vans",
+    "cor": "preto",
+    "solado": "cporo"
+}
+
+###
+
+DELETE http://localhost:3333/sandalia/4bb845ac-706b-4ab4-af5d-a6a016d23837
